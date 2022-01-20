@@ -3,6 +3,7 @@
 score = input("성적 : ")
 score = int(score)
 
+# 다중 조건문
 # - 위에 나온 조건이 만족하지 않을 때, if
 # 아래의 조건을 확인하고, (elif)
 # 모두 만족x는 else
