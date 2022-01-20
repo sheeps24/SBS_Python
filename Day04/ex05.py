@@ -9,3 +9,5 @@ print( f'2024년에는 {age+2} 살이 됩니다.')
 print( f'2024년에는 {age+3} 살이 됩니다.')
 
 print(type(age))
+
+print(type(print( f'2024년에는 {age+3} 살이 됩니다.')))
