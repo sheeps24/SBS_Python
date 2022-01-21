@@ -17,7 +17,7 @@
 # 3. 같은 영역은 들여쓰기 통일
 
 age = input('나이 입력 : ')   # input은 항상 입력값을 str(문자열)로 저장
-age = int(age)
+age = int(age)    # or age = int(input('나이 입력 : '))
 
 # 숫자형으로 연산하기 위해 형 변환을 해야한다. 
 if age >= 20: 
