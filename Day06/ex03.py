@@ -17,15 +17,15 @@ while i <= 10:
     i = i + 1
     
 # 1~10 까지의 합계
-    sum =0
-    a = 1
-while a <= 10:
+sum = 0
+a = 1
+while (a <= 10):
     sum += a
     print(a, end ='')
         
-    if( a!= 10 ):
-        print('+' , end=' ')
-            
-        a = a + 1
-print()
-print('sum = {}'. format(sum))
+    if (a != 10):
+        print('+' , end='')
+    
+    a = a + 1
+
+print('', 'sum = {}'.format(sum))
