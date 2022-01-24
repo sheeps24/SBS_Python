@@ -12,6 +12,10 @@ sum = 0
 
 for i in range(1,N+1):
     sum = sum + i
+    if N != 10:
+        print(i , end = '+')
+    elif N == 10 : 
+        print(i, end ='=')
     
 print("합계 : {}".format(sum))
 
@@ -25,7 +29,7 @@ while c <= a:
     print( '*' * b )   
     b += 1 
     c += 1 ''' 
-
+'''
 a = input('입력 :')
 a = int(a)
 c = 1
@@ -37,3 +41,4 @@ while c < a:
     c += 1
     
 print('합 = {}'.format(a+b))
+'''
