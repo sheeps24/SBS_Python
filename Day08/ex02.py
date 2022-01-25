@@ -29,7 +29,28 @@ def greet( name,msg = '안녕하세요'):
     print(' {}님, {}'.format(name,msg))
     
 greet('김철수')
-greet('김철수','반갑습니다')  
+greet('김철수','반갑습니다') 
+
+
+
+
+
+'''
+def intro(name,age):
+    print('내 이름은 {}, 나이는 {}이다.'.format(name,age))
+    
+print( intro())   # --> 매개변수에 저장 된 것이 없기에 오류발생
+                  #     그냥 변수 a 쓰고 값 지정 안한 것과 같음
+                  
+'''
+
+def s(*a):
+    for i in a:
+        print(i)    
+        
+        
+print( s())    # 매개변수가 있을 때 인수 가 없다면 오류가 뜨지만,
+               # 가변 매개변수라면 'None'라는 결과가 나온다. --> 왜??
 
 
 
