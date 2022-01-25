@@ -29,7 +29,7 @@ def greet( name,msg = '안녕하세요'):
     print(' {}님, {}'.format(name,msg))
     
 greet('김철수')
-greet('김철수','반갑습니다')  ###
+greet('김철수','반갑습니다')  
 
 
 
