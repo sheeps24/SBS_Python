@@ -17,7 +17,10 @@ file.write('\n')
 file.write('파일 입출력 내용을 학습.')
 print('파일이 생성되었습니다.')
 
-file.close()
+file.close() 
+
+
+# file.close ()
 
 
 

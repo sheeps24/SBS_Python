@@ -32,3 +32,25 @@ def test():
      
 test()     #함수 호출
 print('f() 외부 - b : {}' .format(b))
+
+'''
+
+total = 0
+w = {}   # 왜 global을 쓰지 않아도 되는가?
+
+def g(dic,who,money):
+    global total
+    total += money
+    dic[who] = money
+    
+           
+g(w,'영희',5)  # 빈 딕셔너리를 dic에 전달하고 dic이란 이름으로 실행
+g(w,'철수',5)
+g(w,'이모',5)
+
+print('명단 : {}'.format(w) )
+print('총 금액 : {}'.format(total))
+'''
+
+
+
