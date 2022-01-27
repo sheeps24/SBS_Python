@@ -38,7 +38,7 @@ print('math.pow(3,2) : {}'.format(math.pow(3,2)))
 import random
 
 # random() : 0.0xxx ~ 0.9xxx 임의의 실수
-print('random.random : {} '.format(random.random))
+print('random.random : {} '.format(random.random()))
 
 # randint(a,b) : a이상 b이하의 임의의 정수
 print('random.randint : {} '.format(random.randint(1,10)))
@@ -61,6 +61,10 @@ print('이번 주 당첨 번호는 {} '.format(random.sample(lotto, 6)))
 li = [1,2,3,4,5]
 random.shuffle(li)
 print('random.shuffle(li) :  {} '.format(li))
+
+
+
+
 
 
 
