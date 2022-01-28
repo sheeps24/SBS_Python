@@ -50,6 +50,24 @@ g(w,'이모',5)
 
 print('명단 : {}'.format(w) )
 print('총 금액 : {}'.format(total))
+
+
+
+
+def v_m(money):
+    b = 0
+    while money >= 700 :
+        c = money - 700*b
+        print('음료수 : {}개, 잔돈 : {}원'.format(b,c))
+        b += 1
+       
+   
+a = input('금액 지불 : ')
+a = int(a)
+
+v_m(a)
+
+
 '''
 
 
