@@ -18,14 +18,14 @@ print('math.pi : {}'.format(math.pi))
 # ceil() 올림
 print('math.ceil(1.1) : {}'.format(math.ceil(1.1)))
 
-# floor() 내림
-print('math.floor(1.9) : {}'.format(math.floor(1.9)))
+# floor() 내림   = 음수 방향으로 가까운 정수 반환                 # 내림과 절사는 양의 수 일땐 차이가 없지만, 
+print('math.floor(1.9) : {}'.format(math.floor(1.9)))          # 음수에서는 차이가 난다.
 
 # round() 반올림
 print('math.round(2.5,1) : {}'.format(round(2.5,1)))
 print('math.round(2.4,1) : {}'.format(round(2.4,1)))
 
-# trunc() 절사 (특정 자리수 이하를 없앰)
+# trunc() 절사 (특정 자리수 이하를 없앰)  - 0에 가까운 정수 반환
 print('math.trunc(1.9) : {}'.format(math.trunc(1.9)))
 
 # sqrt() 제곱근
