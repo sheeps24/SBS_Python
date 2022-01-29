@@ -7,6 +7,7 @@
 '''
 # 파일 저장 경로
 path = 'C:/박상우/SBS_PYTHON/SBS_Python/Day10/'
+# 집 컴  =  'C:/새 폴더/Git/SBS_Python/Day10/'
 
 # 파일 열기 : open( (경로) + 파일명, 모드, 옵션 )
 file = open(path + 'hello.txt','wt',encoding='UTF-8')  # 경로가 너무 길어 변수로 입력 후 붙임
@@ -18,9 +19,6 @@ file.write('파일 입출력 내용을 학습.')
 print('파일이 생성되었습니다.')
 
 file.close() 
-
-
-# file.close ()
 
 
 
