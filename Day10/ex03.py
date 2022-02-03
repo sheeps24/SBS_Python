@@ -3,7 +3,7 @@
 import time
 
 # 파일 저장 경로
-path = 'C:/박상우/SBS_PYTHON/SBS_Python/Day10/'
+path = 'C:/새 폴더/Git/SBS_Python/Day10/'
 
 today = time.strftime('%Y-%m-%d')
 
@@ -18,7 +18,7 @@ while True:
     if not todo:
         break
     
-    file.write(str(no) + ' ' + todo + '\n')
+    file.write(str(no) + '.' + todo + '\n')
     no += 1
 
-file.close
+file.close()
