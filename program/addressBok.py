@@ -51,8 +51,7 @@
     : 객체를 정의하는 설계도 
 '''
 
-
-
+import sys
 
 class person:
     
