@@ -234,7 +234,7 @@ class addressBook:
             return
         for i, person in enumerate(self.address_list):
             if name == self.address_list[i].name:
-                print(self.address_list[i].phone) 
+                print(person.info()) 
     
                     
     # 주소록 전체 출력
