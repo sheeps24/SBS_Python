@@ -227,7 +227,14 @@ class addressBook:
     # 검색하기
     def search(self):
         # 리스트에서 찾아서 연락처 정보를 출력
-        print 
+        print('===== 주소록 검색 =====')           
+        name = input('검색할 이름 : ')
+        if not name:
+            print('이름이 입력되지 않아 검색을 취소합니다.')
+            return
+        for i, person in enumerate(self.address_list):
+            if name == self.address_list[i].name:
+                print(self.address_list[i].phone) 
     
                     
     # 주소록 전체 출력
