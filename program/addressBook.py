@@ -47,7 +47,6 @@
 
 '''
 
-
 import sys
 
 '''
@@ -63,6 +62,8 @@ import sys
 class Person:
     # 이름, 전화번호, 주소
     # 생성자 : 객체가 생성될 때, 실행되는 메소드
+    # 속성 : name.phone,addr
+    # 기능 : info() 
     def __init__(self, name, phone, addr):
         self.name = name
         self.phone = phone
@@ -74,6 +75,10 @@ class Person:
 
 # 주소록
 class addressBook:
+    # 속성(변수) : address_list
+    # 기능(메소드) : insert,delete 등 함수    
+    
+    
     # 주소 정보 리스트, 파일객체
     # 생성자
     def __init__(self):
@@ -117,6 +122,7 @@ class addressBook:
         except:
             print('addressBook.csv 파일을 생성할 수 없습니다.')
         else:
+            # address_list 반복하여, 모든 연락처 정보를 저장
             for person in self.address_list:
                 file.write('{},{},{}\n'.format( person.name, person.phone, person.addr) )
             file.close()
@@ -159,6 +165,8 @@ class addressBook:
         phone = input('등록할 전화번호 : ')
         addr = input('등록할 주소 : ')
         if name and phone and addr :
+            # 입력한 주소록 정보를 Person 객체를 생성하여,
+            # address_list에 추가한다.
             self.address_list.append( Person(name, phone, addr) )
             self.file_generator()
             print('신규 주소록이 정상적으로 등록되었습니다.')
@@ -218,6 +226,8 @@ class addressBook:
                 updated = True
                 print('주소록이 수정되었습니다.')
                 print('수정된 주소록의 정보')
+                # address_list[i] : 리스트의 i번째 요소 --> Person 객체
+                
                 self.address_list[i].info()
                 self.file_generator()
                 break
@@ -234,7 +244,14 @@ class addressBook:
             return
         for i, person in enumerate(self.address_list):
             if name == self.address_list[i].name:
-                print(person.info()) 
+                phone = self.address_list[i].phone   #
+                addr = self.address_list[i].addr     #
+                print('번호 : {}'.format(phone))     #
+                print('주소 : {}'.format(addr))      #
+                
+                
+                # print(person.info()) 
+            
     
                     
     # 주소록 전체 출력
@@ -251,7 +268,7 @@ class addressBook:
 
 # class addressBook 객체 생성
 my_app = addressBook()
-# 프로그램 실행
+# 주소록 객체의 run() 메소드 호출
 my_app.run()
 
         
