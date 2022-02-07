@@ -75,7 +75,7 @@ class Person:
 
 # 주소록
 class addressBook:
-    # 속성(변수) : address_list
+    # 속성(변수 or 객체변수) : address_list
     # 기능(메소드) : insert,delete 등 함수    
     
     
@@ -268,7 +268,7 @@ class addressBook:
 
 # class addressBook 객체 생성
 my_app = addressBook()
-# 주소록 객체의 run() 메소드 호출
+# 주소록 class를 my_app(객체)에 넣어 run() --> 실행
 my_app.run()
 
         
